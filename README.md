@@ -6,7 +6,7 @@ FCFS, SJF, RR, PRIORITY(non-preemptive) scheduling algorithms implemented in C
 ```
 gcc filename.c -o filename
 ```
-with filename being fcfs, sjf, rr or ps to compile
+with filename being fcfs, sjf, rr or ps to compile if you are using gcc to compile
 
 and then
 ```
