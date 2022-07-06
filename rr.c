@@ -50,23 +50,6 @@ void main() {
 	}
 
 	while (time < max_time) {
-		// printf("----------\n\ntime: %d\n", time);
-
-		// printf("ready queue size: %d\nready queue: ", ready_queue_size + 1);
-
-		// for (int i = 0; i <= ready_queue_size; i++) {
-		// 	printf("%d\t", programs[ready_queue[i]].process_id);
-		// }
-		// printf("\n");
-
-		// printf("done stack size: %d\ndone stack: ", in_ready_queue_stack_top + 1);
-
-		// for (int i = 0; i <= in_ready_queue_stack_top; i++) {
-		// 	printf("%d\t", programs[in_ready_queue_stack[i]].process_id);
-		// }
-		// printf("\n");
-
-		// printf("process id: %d\n----------\n\n", programs[pid].process_id);
 		
 		if (programs[pid].remaining_time > time_quantum) {		
 			time += time_quantum;

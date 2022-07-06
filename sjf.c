@@ -69,6 +69,12 @@ void main() {
 
 		printf("%d\t%d\t%d\t%d\t%d\n", programs[i].process_id, programs[i].arrival_time, programs[i].burst_time, programs[i].waiting_time, programs[i].turnaround_time);
 	}
+
+	float average_turnaround_time = (float)total_turnaround_time / (float)num;
+	float average_waiting_time = (float)total_waiting_time / (float)num;
+
+	printf("Average waiting time = %f\n", average_waiting_time);
+	printf("Average turnaround time = %f\n", average_turnaround_time);
 }
 
 void sort(program *array, int num) {
