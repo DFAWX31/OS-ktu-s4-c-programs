@@ -40,6 +40,11 @@ void main() {
 
   int second = get_start(request_locations, initial_position, number_of_seeks, direction);
   int seq = 0;
+  if (second == -1 && initial_position > request_locations[0]) {
+    second = number_of_seeks - 1;
+  } else if (second == -1) {
+    second = 0;
+  }
 
   if (direction == 0) {
     total_seek += initial_position - request_locations[second];
