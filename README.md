@@ -10,6 +10,13 @@ to compile if you are using gcc to compile
 gcc filename.c -o filename
 ```
 
+if clang
+
+```sh
+clang filename.c -o filename
+```
+*Ignore the void main to int error in clang or better gcc*
+
 and then
 
 ```sh
