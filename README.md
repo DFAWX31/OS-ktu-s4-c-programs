@@ -15,7 +15,7 @@ if clang
 ```sh
 clang filename.c -o filename
 ```
-*Ignore the void main to int error in clang or better gcc*
+*Ignore the void main to int warning in clang or better gcc*
 
 and then
 
